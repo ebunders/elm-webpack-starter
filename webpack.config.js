@@ -70,7 +70,7 @@ if (isDev === true) {
             rules: [{
                 test: /\.elm$/,
                 exclude: [/elm-stuff/, /node_modules/],
-                use: [{
+                use: ['elm-hot-loader',{
                     loader: 'elm-webpack-loader',
                     options: {
                         verbose: true,
